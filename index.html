@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <!--<script src="./js/decks.js"></script>-->
+    <script type="module" src="./js/decks.js"></script>
+    <script type="module" src="./js/initializeDecks.js"></script>
+    <script type="module" src="./js/localStorage.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/level.js"></script>
+    <script type="module" src="./js/dom.js"></script>
+
+
+    <title>Random Array Method</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 id="methodName">Method Name : </h1><br>
+            <p id="methodDescription" class="description">Method Description : </p><br>
+            <p id="methodSyntax" class="synthax">Syntaxe : </p>
+            <div class="button-wrapper">
+                <button class="action-button" id="notion" onclick="showRandomMethod()">Génère une notion</button>
+                <button class="action-button" id="spoiler" onclick="toggleDescription()">Spoiler</button>
+            </div>
+        </div>
+        <div id="difficultyContainer" style="display: none;">
+            Évaluez la difficulté de cette méthode:
+            <button onclick="setDifficulty(1)">1</button>
+            <button onclick="setDifficulty(2)">2</button>
+            <button onclick="setDifficulty(3)">3</button>
+            <button onclick="setDifficulty(4)">4</button>
+            <button onclick="setDifficulty(5)">5</button>
+        </div>
+    </div>
+</body>
+</html>

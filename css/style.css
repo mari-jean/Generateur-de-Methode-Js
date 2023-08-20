@@ -1,0 +1,107 @@
+/* Reset des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Définition des variables de couleur */
+:root {
+    --gris-fonce: #333333;
+    --gris-sombre: #292b2c;
+    --gris-moyen: #555555;
+    --gris-clair: #dddddd;
+    --blanc: #ffffff;
+    --noir: #000000;
+    --bleu-principal: #007bff;
+    --bleu-survol: #0056b3;
+    --vert: #00cc00;
+    --rouge: #ff0000;
+    --jaune: #ffcc00;
+    --orange: #ff9900;
+    --rose: #ff66b2;
+    --violet: #800080;
+    --marron: #a52a2a;
+    --argent: #c0c0c0;
+    --gris: #808080;
+    --or: #ffd700;
+    --vert-clair: #00ff00;
+    --turquoise: #40e0d0;
+    --indigo: #4b0082;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--gris-sombre);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--gris-fonce);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--gris-clair);
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--gris-clair);
+    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.3);
+}
+
+.synthax {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: var(--gris-clair);
+    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.3);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action-button {
+    background-color: var(--bleu-principal);
+    color: var(--gris-clair);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#difficultyContainer {
+    margin-top: 20px;
+    display: none;
+}
+
+#difficultyContainer button {
+    margin: 0 5px;
+    background-color: var(--gris-clair);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style pour les boutons lorsque la souris est dessus */
+.action-button:hover,
+#difficultyContainer button:hover {
+    background-color: var(--rouge);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
