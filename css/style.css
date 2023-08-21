@@ -14,6 +14,7 @@
     --bleu-principal: #007bff;
     --bleu-survol: #0056b3;
     --rouge: #ff0000;
+    --gris: #808080;
 
 
 }
@@ -89,6 +90,7 @@ button-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 #difficultyContainer {
