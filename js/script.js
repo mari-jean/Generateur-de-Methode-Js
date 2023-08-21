@@ -57,17 +57,18 @@ function showRandomMethod() {
 }
 
 function toggleDescription() {
-    const descriptionElem = document.getElementById('methodDescription');
-    const syntaxElem = document.getElementById('methodSyntax');
-    
-    if (descriptionElem.style.display === 'none' || descriptionElem.style.display === '') {
-        descriptionElem.style.display = 'block';
-        syntaxElem.style.display = 'block';  // affiche la syntaxe
-    } else {
-        descriptionElem.style.display = 'none';
-        syntaxElem.style.display = 'none';  // cache la syntaxe
-    }
+    const elementsToToggle = ['methodDescription', 'methodSyntax'];
+
+    elementsToToggle.forEach(elementId => {
+        const element = document.getElementById(elementId);
+        if (element.style.display === 'none' || element.style.display === '') {
+            element.style.display = 'inline';  // Change 'block' to 'inline' for better formatting with h2
+        } else {
+            element.style.display = 'none';
+        }
+    });
 }
+
 
 
 export { showRandomMethod, toggleDescription };

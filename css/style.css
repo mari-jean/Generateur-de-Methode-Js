@@ -59,14 +59,19 @@ h1 {
     font-size: 16px;
     margin-bottom: 20px;
     color: var(--gris-clair);
-    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.3);
+    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.2);
 }
 
 .synthax {
     font-size: 16px;
     margin-bottom: 20px;
     color: var(--gris-clair);
-    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.3);
+    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.2);
+}
+
+h3 {
+    color:var(--gris);
+    padding-bottom: 10px;
 }
 
 .button-wrapper {
@@ -74,6 +79,13 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
+
+.button-wrapper .action-button {
+    width: 150px;  /* Largeur définie */
+    height: 35px;  /* Hauteur définie */
+    padding: 5px 10px;
+}
+
 
 .action-button {
     background-color: var(--bleu-principal);
@@ -84,6 +96,16 @@ h1 {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+button-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* #spoiler {
+    margin-left: 100px;
+} */
 
 #difficultyContainer {
     margin-top: 20px;
