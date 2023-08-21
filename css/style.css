@@ -65,7 +65,7 @@ h3 {
 
 .button-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -84,13 +84,6 @@ h3 {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-button-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
 }
 
 #difficultyContainer {
