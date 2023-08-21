@@ -19,18 +19,22 @@
 
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'JetBrains Mono', monospace,Arial, sans-serif;
     background-color: var(--gris-sombre);
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
 .card {
+    box-sizing: border-box;
+    width: 500px;
+    height: 400px;
     background-color: var(--gris-fonce);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -38,29 +42,60 @@ body {
     text-align: center;
 }
 
+.setLevel {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.setLevelBtn:hover {
+    color: var(--blanc);
+}
+
+.setLevelBtn {
+    background-color: var(--bleu-principal);
+    padding-bottom: 20px;
+}
+
+.setupLevel {
+    padding-bottom: 10px;
+    color: var(--bleu-principal);
+    text-shadow: 0 6px 10px rgba(223, 216, 216, 0.2);
+}
+
 h1 {
+    height: 40px;
     font-size: 24px;
-    margin-bottom: 10px;
     color: var(--gris-clair);
 }
 
 .description {
     font-size: 16px;
+    margin-top: 10px;
     margin-bottom: 20px;
     color: var(--gris-clair);
-    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.2);
+    text-shadow: 0 6px 10px rgba(223, 216, 216, 0.4);
 }
 
 .synthax {
     font-size: 16px;
+    margin-top: 10px;
     margin-bottom: 20px;
     color: var(--gris-clair);
-    box-shadow: 0 6px 10px rgba(223, 216, 216, 0.2);
+    text-shadow: 0 6px 10px rgba(223, 216, 216, 0.4);
+}
+
+.castleOfCards {
+    text-shadow: 0 6px 10px rgba(223, 216, 216, 0.2);
 }
 
 h3 {
+    height: 80px;
     color:var(--gris);
-    padding-bottom: 10px;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-wrapper {
@@ -88,7 +123,9 @@ h3 {
 
 #difficultyContainer {
     margin-top: 20px;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #difficultyContainer button {

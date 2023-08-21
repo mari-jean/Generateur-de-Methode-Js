@@ -11,12 +11,31 @@
     <script type="module" src="./js/script.js"></script>
     <script type="module" src="./js/level.js"></script>
     <script type="module" src="./js/dom.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Lobster&display=swap" rel="stylesheet">
 
 
     <title>Générateur de Methode JS</title>
 </head>
 <body>
     <div class="container">
+        <div class="titre">
+            <h1 class="castleOfCards">Castle Of Cards                
+            </h1>            
+        </div>
+        <div id="difficultyContainer">
+            <div class="setupLevel">
+                Évaluez la difficulté de cette méthode (1 = facile; 5 = difficile) :
+            </div> 
+            <div class="setLevel">
+                <button class="setLevelBtn" onclick="setDifficulty(1)">1</button>
+                <button class="setLevelBtn" onclick="setDifficulty(2)">2</button>
+                <button class="setLevelBtn" onclick="setDifficulty(3)">3</button>
+                <button class="setLevelBtn" onclick="setDifficulty(4)">4</button>
+                <button class="setLevelBtn" onclick="setDifficulty(5)">5</button>
+            </div>
+        </div>
         <div class="card">
             <h1>Method: <span id="methodName">Method Name</span></h1><br>
             <h3>Description: <span id="methodDescription" class="description">Method Description</span></h3><br>
@@ -25,14 +44,6 @@
                 <button class="action-button" id="notion" onclick="showRandomMethod()">Génère une notion</button>
                 <button class="action-button" id="spoiler" onclick="toggleDescription()">Spoiler</button>
             </div>
-        </div>
-        <div id="difficultyContainer" style="display: none;">
-            Évaluez la difficulté de cette méthode:
-            <button onclick="setDifficulty(1)">1</button>
-            <button onclick="setDifficulty(2)">2</button>
-            <button onclick="setDifficulty(3)">3</button>
-            <button onclick="setDifficulty(4)">4</button>
-            <button onclick="setDifficulty(5)">5</button>
         </div>
     </div>
 </body>

@@ -4,11 +4,12 @@ import { initializeDecks } from "./initializeDecks.js";
 import { setDifficulty, checkAndShowDifficultySelection } from "./level.js";
 import { saveDecksToLocalStorage, loadDecksFromLocalStorage } from "./localStorage.js";
 
+// Chargement des decks à partir du stockage local
+loadDecksFromLocalStorage(decks);
+
 // Initialisation des decks (assignation des valeurs par défaut, etc.)
 initializeDecks(decks);
 
-// Chargement des decks à partir du stockage local
-loadDecksFromLocalStorage(decks);
 
 // Variables pour suivre le dernier thème et la dernière méthode vus par l'utilisateur
 export let lastTheme = null;
