@@ -45,7 +45,7 @@ function hideDifficultySelection() {
 }
 
 function checkAndShowDifficultySelection() {
-    if (decks.themes[lastTheme][lastMethod].views == 5 && !decks.themes[lastTheme][lastMethod].difficulty) {
+    if (decks.themes[lastTheme][lastMethod].views == 3 && !decks.themes[lastTheme][lastMethod].difficulty) {
         showDifficultySelection();
     }
 }

@@ -25,7 +25,7 @@ function showRandomMethod() {
     // Si on a déjà sélectionné une méthode et un thème précédemment
     if (lastMethod && lastTheme) {
         // Vérifie si l'utilisateur a vu la méthode 5 fois et n'a pas défini de difficulté
-        if (decks.themes[lastTheme][lastMethod].views === 5 && !decks.themes[lastTheme][lastMethod].difficulty) {
+        if (decks.themes[lastTheme][lastMethod].views === 3 && !decks.themes[lastTheme][lastMethod].difficulty) {
             showDifficultySelection();
             return; // Ne fait rien d'autre si on doit définir une difficulté
         }
