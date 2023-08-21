@@ -11,22 +11,10 @@
     --gris-moyen: #555555;
     --gris-clair: #dddddd;
     --blanc: #ffffff;
-    --noir: #000000;
     --bleu-principal: #007bff;
     --bleu-survol: #0056b3;
-    --vert: #00cc00;
     --rouge: #ff0000;
-    --jaune: #ffcc00;
-    --orange: #ff9900;
-    --rose: #ff66b2;
-    --violet: #800080;
-    --marron: #a52a2a;
-    --argent: #c0c0c0;
-    --gris: #808080;
-    --or: #ffd700;
-    --vert-clair: #00ff00;
-    --turquoise: #40e0d0;
-    --indigo: #4b0082;
+
 
 }
 body {
@@ -101,11 +89,7 @@ button-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
-/* #spoiler {
-    margin-left: 100px;
-} */
 
 #difficultyContainer {
     margin-top: 20px;
