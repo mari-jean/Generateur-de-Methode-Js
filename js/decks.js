@@ -284,13 +284,6 @@ const decks = {
                 }
             },
 
-        'Scope et Closures': {
-            'Closure': {
-                description: 'Une fonction avec un accès aux variables de sa portée englobante, même après que cette portée a été exécutée',
-                syntaxe: 'function outer() { const variable = ...; return function inner() { ... } }'
-            }
-            // Ajoutez d'autres méthodes liées au scope et aux closures ici...
-            },
         
         'Destructuring': {
             'Destructuring d\'objets': {
